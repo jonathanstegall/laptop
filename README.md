@@ -26,8 +26,7 @@ Download, review, then execute the script:
 
 ```sh
 curl --remote-name https://raw.githubusercontent.com/jonathanstegall/laptop/master/mac
-less mac
-sh mac 2>&1 | tee ~/laptop.log
+bash mac 2>&1 | tee ~/laptop.log
 ```
 
 Optionally, [install thoughtbot/dotfiles][dotfiles].
