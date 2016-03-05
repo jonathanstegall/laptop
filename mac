@@ -189,7 +189,7 @@ brew_install_or_upgrade 'ruby-build'
 fancy_echo "Updating databases ..."
 brew_install_or_upgrade 'mysql'
 unset TMPDIR
-mysql_install_db
+mysqld --initialize
 
 fancy_echo "Configuring Apache / local DNS ..."
 mkdir -pv $(brew --prefix)/etc/
